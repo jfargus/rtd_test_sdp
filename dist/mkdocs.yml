@@ -1,0 +1,37 @@
+site_name: SDP Qlik Documentation
+site_url: https://sdp-era.gitlab.io/documentation
+site_dir: public
+theme:
+  name: material
+  custom_dir: overrides
+  logo: assets/SDP_Logo2.png
+  features:
+    - toc.follow
+    - navigation.tabs
+    - navigation.sections
+    - navigation.indexes
+    - content.code.copy
+  #palette:
+  #primary: white
+  #logo: assets/sdp_long.gif
+repo_url: https://gitlab.com/sdp-era/sdp-qlik
+extra:
+  generator: false
+extra_css:
+  - stylesheets/qlikview.css
+  - stylesheets/extras.css
+extra_javascript:
+  - javascripts/highlight.pack.js
+  - https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js
+  - javascripts/tablesort.js
+markdown_extensions: 
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - md_in_html
+  - tables
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
